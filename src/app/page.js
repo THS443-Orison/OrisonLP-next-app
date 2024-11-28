@@ -1,95 +1,94 @@
+"use client";
+
 import Image from "next/image";
-import styles from "./page.module.css";
+import orisonLogo from "@/assets/images/OrisonLogo.svg";
+import handsImage from "@/assets/images/hands.svg";
+import styles from "@/app/mobile.module.css";
+import menuBtn from "@/assets/images/menuBtn.svg";
+import VotingButton from "@/components/VotingButton";
+import StepsSection from "@/components/StepsSection";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div className={styles.mobileContainer}>
+      <section className={styles.firstView}>
+        <div className={styles.handsImage}>
+          <Image src={handsImage} alt="hands" />
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className={styles.orisonLogo}>
+          <Image src={orisonLogo} alt="orison_logo" />
+        </div>
+        <div className={styles.catchCopy}>
+          <p>
+            あなたの折り紙で、折りなす日本を
+            <br />
+            織りなしていく町づくり体験
+            <br />
+            その手で祈る新世界へ！
+          </p>
+        </div>
+        <div className={styles.menuBtn}>
+          <Image src={menuBtn} alt="menu" />
+        </div>
+        <VotingButton />
+        <section className={styles.about}>
+          <h2>ORISONとは</h2>
+          <p>
+            Orisonは、折り紙で織りなす日本の町づくり体験です。 Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Velit quae ab nam nostrum
+            cum! Sapiente ad inventore pariatur in similique!
+          </p>
+          <div className={styles.aboutImage}>
+            <img src="" alt="aboutImage" />
+          </div>
+        </section>
+        <section className={styles.experience}>
+          <h2>
+            折り紙で織りなす
+            <br />
+            未来都市
+          </h2>
+          <p>未来都市『ORISON』を体験してみよう</p>
+          <div className={styles.experienceMovie}>
+            {/* <video src="" autoplay muted loop></video> */}
+            <div className={styles.aboutImage}>
+              <img src="" alt="aboutImage" />
+            </div>
+          </div>
+        </section>
+        <StepsSection />
+        <div className={styles.wtfContent}>
+          <img src="" alt="wtf" />
+        </div>
+        <section className={styles.aboutFuture}>
+          <h2>50年後の未来</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            non omnis accusantium inventore quibusdam dignissimos, debitis saepe
+            atque quisquam, repellendus repudiandae dolores ex provident
+            possimus accusamus magnam. Consequuntur ex consectetur qui? Dolor
+            ipsa fugit porro veniam officiis ea quae accusamus.
+          </p>
+          <div className={styles.futureImage}>
+            <img src="" alt="futureImage" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            perferendis doloremque eius similique perspiciatis odio voluptate
+            eaque voluptatibus omnis dolorem?
+          </p>
+          <div className={styles.futureImage}>
+            <img src="" alt="futureImage" />
+          </div>
+        </section>
+        <VotingButton />
+        <div className={styles.footerContent}>
+          <div className={styles.footerInner}>
+            <Image src={orisonLogo} alt="orison_logo" />
+            <small>©THS443-ORISON</small>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
