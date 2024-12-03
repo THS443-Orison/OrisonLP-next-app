@@ -1,0 +1,102 @@
+@media (min-width: 1024px) {
+  /* .displayNoneOnDesktop {
+    display: none;
+    position: relative;
+  } */
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative; /* Relativeで基準を設定 */
+    background-image: url(../assets/images/aaa.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .noDecoration {
+    text-decoration: none;
+    color: #567cb5;
+  }
+  .noDecoration2 {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .containerLeft {
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 30%;
+    height: 100%;
+    left: 0;
+  }
+
+  .mobileScrean {
+    overflow-y: auto;
+    position: absolute;
+    max-width: 40%;
+    padding: 0 20px;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%; /* スクロール領域の高さ */
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    box-shadow: 0 0px 10px 10px rgba(255, 255, 255, 0.5);
+  }
+
+  .mobileScrean::-webkit-scrollbar {
+    display: none; /* スクロールバーを非表示 */
+  }
+
+  .containerRight {
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    right: 5%; /* 右端に固定 */
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .navs {
+    margin-top: 180px;
+  }
+  .navs li {
+    margin-top: 20px;
+    text-shadow: 0px 0px 10px #fff;
+  }
+  .pageTop {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #567cb5;
+    border-radius: 15px;
+    position: relative;
+  }
+
+  .pageTopText {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 1048px) {
+    .container {
+      background-image: url(../assets/images/aaa.webp);
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .logo {
+      display: none;
+    }
+    .mobileScrean {
+      overflow-y: auto; /* 縦スクロールを有効化 */
+      height: 100vh; /* 親要素の高さを指定 */
+      position: relative; /* スクロールが効かない場合は再調整 */
+    }
+  }
+  
