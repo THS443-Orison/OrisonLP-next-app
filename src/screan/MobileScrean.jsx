@@ -10,7 +10,7 @@ import StepsSection from "@/components/StepsSection";
 
 export default function MobileScrean() {
   return (
-    <div className={styles.mobileContainer}>
+    <div id="pageTop" className={styles.mobileContainer}>
       <section className={styles.firstView}>
         <div className={styles.handsImage}>
           <Image src={handsImage} alt="hands" />
@@ -27,11 +27,11 @@ export default function MobileScrean() {
             その手で祈る新世界へ！
           </p>
         </div>
-        <div className={styles.menuBtn}>
+        <div className={styles.menuBtn + " " + styles.displayNoneOnDesktop}>
           <Image src={menuBtn} alt="menu" />
         </div>
         <VotingButton />
-        <section className={styles.about}>
+        <section id="about" className={styles.about}>
           <h2>ORISONとは</h2>
           <p>
             Orisonは、折り紙で織りなす日本の町づくり体験です。 Lorem ipsum dolor
@@ -42,7 +42,7 @@ export default function MobileScrean() {
             <img src="" alt="aboutImage" />
           </div>
         </section>
-        <section className={styles.experience}>
+        <section id="steps" className={styles.experience}>
           <h2>
             折り紙で織りなす
             <br />
@@ -60,7 +60,7 @@ export default function MobileScrean() {
         <div className={styles.wtfContent}>
           <img src="" alt="wtf" />
         </div>
-        <section className={styles.aboutFuture}>
+        <section id="future" className={styles.aboutFuture}>
           <h2>50年後の未来</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
@@ -90,5 +90,5 @@ export default function MobileScrean() {
         </div>
       </section>
     </div>
-  )
+  );
 }

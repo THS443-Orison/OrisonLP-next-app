@@ -1,201 +1,205 @@
+.section {
+  margin-top: 100px;
+}
 
-
-  .section{
-    margin-top: 100px;
-  }
-  
 .mobileContainer {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-image: url(../assets/images/bg.jpg);
-    background-repeat: cover;
-    max-width: 375px; /* モバイル幅に固定 */
-    height: auto;
-    padding-bottom: 100px;
-    margin: 0 auto;   /* 中央揃え */ /* 余白 */
-  }
-  .firstView{
-   position: relative;
-  }
-  .handsImage{
-    margin: 0 auto;
-  }
-  .handsImage img{
-    width: 100%;
-    height: auto;
-  }
-  .orisonLogo{
-    position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .orisonLogo img{
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-  }
-  .menuBtn{
-    position: absolute;
-    top: 20px;
-    right: 15px;
-  }
-  .menuBtn img{
-    width: 100%;
-    height: auto;
-  }
-  
-.catchCopy{
-    margin-top: -110px;
-    align-items: center;
-    text-align: center;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-image: url(../assets/images/bg.jpg);
+  background-repeat: cover;
+  max-width: 390px; /* モバイル幅に固定 */
+  height: auto;
+  padding-bottom: 100px;
+  margin: 0 auto; /* 中央揃え */ /* 余白 */
 }
-.catchCopy p{
-    color: #222;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.04em;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0.2, 0.25);
+.firstView {
+  position: relative;
 }
-.votingBtn{
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 100px;
+.handsImage {
+  margin: 0 auto;
 }
-.votingBtn p{
-    font-size: 16px;
-    letter-spacing: 0.04em;
-    font-weight: bold;
+.handsImage img {
+  width: 100%;
+  height: auto;
+}
+.orisonLogo {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.orisonLogo img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+.menuBtn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.menuBtn img {
+  width: 100%;
+  height: auto;
+}
+
+.catchCopy {
+  margin-top: -110px;
+  align-items: center;
+  text-align: center;
+}
+.catchCopy p {
+  color: #222;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0.2, 0.25);
+}
+.votingBtn {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.votingBtn p {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  font-weight: bold;
 }
 .votingBtn button {
-    margin-top: 10px; /* ボタン間の間隔 */
-    border-radius: 27px; /* 丸み */
-    background-color: #b67338; /* ベース色 */
-    color: #ffffff; /* 白いテキスト */
-    font-weight: bold; /* 太字 */
-    font-size: 24px; /* 読みやすいサイズ */
-    padding: 20px 40px; /* 十分な余白 */
-    border: 2px solid #793e10; /* 枠線の色を設定 */
-    cursor: pointer; /* ホバー時に指カーソル */
-    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease; /* スムーズなアニメーション */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ボタンの立体感 */
+  margin-top: 10px; /* ボタン間の間隔 */
+  border-radius: 27px; /* 丸み */
+  background-color: #b67338; /* ベース色 */
+  color: #ffffff; /* 白いテキスト */
+  font-weight: bold; /* 太字 */
+  font-size: 24px; /* 読みやすいサイズ */
+  padding: 20px 40px; /* 十分な余白 */
+  border: 2px solid #793e10; /* 枠線の色を設定 */
+  cursor: pointer; /* ホバー時に指カーソル */
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    border-color 0.3s ease; /* スムーズなアニメーション */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ボタンの立体感 */
 }
 
 .votingBtn button:hover {
-    background-color: #945d2d; /* ホバー時に濃い色 */
-    border-color: #5e2e0b; /* ホバー時の枠線色 */
-    transform: scale(1.05); /* ホバー時に少し拡大 */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* シャドウを強調 */
+  background-color: #945d2d; /* ホバー時に濃い色 */
+  border-color: #5e2e0b; /* ホバー時の枠線色 */
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* シャドウを強調 */
 }
 
 .votingBtn button:active {
-    transform: scale(0.98); /* クリック時に少し縮む */
-    border-color: #4a2007; /* クリック時の枠線色 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* クリック時の立体感 */
-    background-color: #7a4a22; /* クリック時のさらに濃い色 */
+  transform: scale(0.98); /* クリック時に少し縮む */
+  border-color: #4a2007; /* クリック時の枠線色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* クリック時の立体感 */
+  background-color: #7a4a22; /* クリック時のさらに濃い色 */
 }
 
-.about{
-    text-align: center;
-    margin: 100px 30px 0 30px;
+.about {
+  text-align: center;
+  margin: 100px 30px 0 30px;
 }
 
-.about h2{
-    font-size: 27px;
+.about h2 {
+  font-size: 27px;
 }
-.about p{
-   margin-top: 40px;
-   font-size: 16px;
-   letter-spacing: 0.04em;
+.about p {
+  margin-top: 40px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
 }
 /* fix*/
-.aboutImage{
-    margin-top: 40px;
-    background-color: #666;
-    width: 100%;
-    height: 200px;
+.aboutImage {
+  margin-top: 40px;
+  background-color: #666;
+  width: 100%;
+  height: 200px;
 }
 
-
-.experience{
-    text-align: center;
-    margin: 100px 30px 0 30px;
+.experience {
+  text-align: center;
+  margin: 100px 30px 0 30px;
 }
 
-.experience h2{
-    font-size: 27px;
+.experience h2 {
+  font-size: 27px;
 }
-.experience p{
-   margin-top: 40px;
-   font-size: 16px;
-   letter-spacing: 0.04em;
+.experience p {
+  margin-top: 40px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
 }
 /* fix*/
-.experienceImage{
-    margin-top: 40px;
-    background-color: #666;
-    width: 100%;
-    height: 200px;
+.experienceImage {
+  margin-top: 40px;
+  background-color: #666;
+  width: 100%;
+  height: 200px;
 }
-.stepsOrison{
-    margin: 100px 30px 0 30px;
-    text-align: center;
+.stepsOrison {
+  margin: 100px 30px 0 30px;
+  text-align: center;
 }
-.titleArea{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.titleArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.stepsOrison p{
-    margin-top: 40px;
-    font-size: 16px;
-    letter-spacing: 0.04em;
- }
- .stepImages{
-    margin-top: 10px;
-    background-color: #666;
-    width: 100%;
-    height: 200px;
- }
- .wtfContent{
-    margin-top: 100px;
-    background-color: #666;
-    width: 100%;
-    height: 320px;
- }
- 
- .aboutFuture{
-    text-align: center;
-    margin: 100px 30px 0 30px;
+.stepsOrison p {
+  margin-top: 40px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+.stepImages {
+  margin-top: 10px;
+  background-color: #666;
+  width: 100%;
+  height: 200px;
+}
+.wtfContent {
+  margin-top: 100px;
+  background-color: #666;
+  width: 100%;
+  height: 320px;
 }
 
-.aboutFuture h2{
-    font-size: 27px;
-}
-.aboutFuture p{
-   margin-top: 40px;
-   font-size: 16px;
-   letter-spacing: 0.04em;
-}
-.futureImage{
-    margin-top: 40px;
-    background-color: #666;
-    width: 100%;
-    height: 200px;
-}
-.footerContent{
-    margin: 100px 40px 0px 40px;
-    border-top: 1px solid #333;
-}
-.footerInner{
-    margin: 40px 60px 0 60px;
-    text-align: center;
-}
-.footerInner img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+.aboutFuture {
+  text-align: center;
+  margin: 100px 30px 0 30px;
 }
 
+.aboutFuture h2 {
+  font-size: 27px;
+}
+.aboutFuture p {
+  margin-top: 40px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+.futureImage {
+  margin-top: 40px;
+  background-color: #666;
+  width: 100%;
+  height: 200px;
+}
+.footerContent {
+  margin: 100px 40px 0px 40px;
+  border-top: 1px solid #333;
+}
+.footerInner {
+  margin: 40px 60px 0 60px;
+  text-align: center;
+}
+.footerInner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .menuBtn {
+    display: none;
+  }
+}
