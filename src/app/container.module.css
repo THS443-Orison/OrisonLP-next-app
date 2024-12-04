@@ -61,7 +61,7 @@
   }
 
   .navs {
-    margin-top: 180px;
+    margin-top: 70%;
   }
   .navs li {
     margin-top: 20px;
@@ -98,5 +98,6 @@
       height: 100vh; /* 親要素の高さを指定 */
       position: relative; /* スクロールが効かない場合は再調整 */
     }
+   
   }
   
